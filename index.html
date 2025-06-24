@@ -5,59 +5,50 @@
   <title>Universal Remote</title>
   <style>
     body {
-      background-color: #000;         /* black background */
-      color: white;                   /* white text */
+      background: #000;
+      color: #fff;
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 40px;
+      margin: 0; padding: 40px;
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
     }
-
     .container {
       text-align: center;
       max-width: 700px;
+      transform: translateY(-20%);
     }
-
-    h1, h2 {
-      color: white;
-    }
-
     ol {
       text-align: left;
       margin: 0 auto 30px;
       line-height: 1.6;
       padding-left: 20px;
     }
-
     esp-web-install-button {
       --esp-tools-button-color: #28a745;
-      --esp-tools-button-text-color: white;
+      --esp-tools-button-text-color: #fff;
       --esp-tools-button-border-radius: 12px;
     }
-
     button[slot="activate"] {
       padding: 12px 24px;
       font-size: 18px;
-      background-color: #28a745;
+      background: #28a745;
       border: none;
       border-radius: 12px;
-      color: white;
+      color: #fff;
       cursor: pointer;
       font-weight: bold;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.3s;
     }
-
     button[slot="activate"]:hover {
-      background-color: #1e7e34;
+      background: #1e7e34;
     }
-
-    span[slot="unsupported"], span[slot="not-allowed"] {
+    span[slot="unsupported"],
+    span[slot="not-allowed"] {
       display: block;
       margin-top: 1em;
-      color: #ff4d4d;
+      color: #f44;
       font-weight: bold;
     }
   </style>
@@ -68,18 +59,18 @@
 
     <h2>Instructions</h2>
     <ol>
-      <li>Connect your <strong>Universal Remote</strong> to your computer via USB-C.</li>
-      <li>Use <strong>Google Chrome</strong> or <strong>Microsoft Edge</strong> on desktop.</li>
-      <li>Click the <strong>"🚀 Start Firmware Upgrade"</strong> button below.</li>
+      <li>Connect your <strong>Universal Remote</strong> via USB-C.</li>
+      <li>Use <strong>Google Chrome</strong> or <strong>Microsoft Edge</strong>.</li>
+      <li>Click <strong>"🚀 Start Firmware Upgrade"</strong> below.</li>
       <li>Push and hold 👆 Universal Remote <strong>Button.</strong></li>
       <li>Select the connected device when prompted.</li>
-      <li>Wait until flashing completes. Do not unplug the device.</li>
+      <li>Wait until flashing completes. Do not unplug.</li>
     </ol>
 
     <esp-web-install-button manifest="manifest.json">
       <button slot="activate">🚀 Start Firmware Upgrade</button>
-      <span slot="unsupported">❌ Sorry, your browser doesn't support Web Serial API.</span>
-      <span slot="not-allowed">⚠️ Please use HTTPS or localhost to flash firmware.</span>
+      <span slot="unsupported">❌ Browser doesn't support Web Serial API.</span>
+      <span slot="not-allowed">⚠️ Use HTTPS or localhost to flash firmware.</span>
     </esp-web-install-button>
   </div>
 
