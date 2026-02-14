@@ -1,31 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
-    <title>KreaLab</title>
+    <title>kreaxv</title>
     <link href="https://kreaxv.github.io/feed.xml" rel="self" />
     <link href="https://kreaxv.github.io" />
-    <updated>2026-02-14T15:47:57+08:00</updated>
+    <updated>2026-02-14T17:44:14+08:00</updated>
     <author>
         <name>kreaxv</name>
     </author>
     <id>https://kreaxv.github.io</id>
 
     <entry>
-        <title>Hello World</title>
+        <title>Tailscale Subnet Router гэж юу вэ?</title>
         <author>
             <name>kreaxv</name>
         </author>
-        <link href="https://kreaxv.github.io/hello-world.html"/>
-        <id>https://kreaxv.github.io/hello-world.html</id>
+        <link href="https://kreaxv.github.io/tailscale-subnet-router-gezh-yuu-ve-boditoor-yuund-heregtey-ve.html"/>
+        <id>https://kreaxv.github.io/tailscale-subnet-router-gezh-yuu-ve-boditoor-yuund-heregtey-ve.html</id>
 
-        <updated>2026-02-14T15:47:57+08:00</updated>
+        <updated>2026-02-14T17:41:12+08:00</updated>
             <summary type="html">
                 <![CDATA[
-                    Test blog Publii
+                    Tailscale Subnet Router гэж юу вэ? (Бодитоор юунд хэрэгтэй вэ) Tailscale-ийг ихэвчлэн “WireGuard-тай хялбар VPN” гэж ойлгодог. Гэхдээ нэг том асуудал байдаг. 👉 Таны сүлжээнд байгаа бүх төхөөрөмж дээр Tailscale суулгаж болдоггүй. Жишээ нь: Эдгээр нь VPN client суулгах чадваргүй. Гэхдээ та алсаас хандахыг хүсдэг.
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>Test blog Publii<figure class="post__image"><img loading="lazy"  src="https://kreaxv.github.io/media/posts/1/Screenshot-from-2026-02-07-12-42-41.png" alt="" width="721" height="669" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://kreaxv.github.io/media/posts/1/responsive/Screenshot-from-2026-02-07-12-42-41-xs.png 640w ,https://kreaxv.github.io/media/posts/1/responsive/Screenshot-from-2026-02-07-12-42-41-sm.png 768w ,https://kreaxv.github.io/media/posts/1/responsive/Screenshot-from-2026-02-07-12-42-41-md.png 1024w ,https://kreaxv.github.io/media/posts/1/responsive/Screenshot-from-2026-02-07-12-42-41-lg.png 1366w ,https://kreaxv.github.io/media/posts/1/responsive/Screenshot-from-2026-02-07-12-42-41-xl.png 1600w ,https://kreaxv.github.io/media/posts/1/responsive/Screenshot-from-2026-02-07-12-42-41-2xl.png 1920w"></figure>
+                <h1 id="tailscale-subnet-router-гэж-юу-вэ-бодитоор-юунд-хэрэгтэй-вэ">Tailscale Subnet Router гэж юу вэ? (Бодитоор юунд хэрэгтэй вэ)</h1>
+<p>Tailscale-ийг ихэвчлэн “WireGuard-тай хялбар VPN” гэж ойлгодог. Гэхдээ нэг том асуудал байдаг.</p><p>👉 Таны сүлжээнд байгаа бүх төхөөрөмж дээр Tailscale суулгаж болдоггүй.</p><p>Жишээ нь:</p><ul>
+<li>Принтер</li>
+<li>Камер</li>
+<li>NAS</li>
+<li>Router</li>
+<li>Smart TV</li>
+<li>IoT төхөөрөмжүүд</li>
+</ul>
+<p>Эдгээр нь VPN client суулгах чадваргүй. Гэхдээ та алсаас хандахыг хүсдэг.</p><p>Энд <strong>Subnet Router</strong> гарч ирдэг.</p><hr>
+<h2 id="subnet-router--сүлжээний-хаалга">Subnet Router = Сүлжээний хаалга</h2>
+<p>Subnet Router бол Tailscale-д холбогдсон <strong>нэг төхөөрөмж</strong> бөгөөд таны дотоод LAN-ийг бүхэлд нь Tailscale-д “оруулж” өгдөг.</p><p>Өөрөөр хэлбэл:</p><pre><code>Таны laptop (гадаад)
+        ↓
+Tailscale network
+        ↓
+Subnet Router (гэрт байгаа Raspberry Pi / Server)
+        ↓
+192.168.0.x бүх төхөөрөмж
+</code></pre>
+<p>Тэгээд л боллоо. Камер дээр Tailscale суулгах шаардлагагүй.</p><hr>
+<h2 id="яагаад-exit-node-биш-вэ">Яагаад Exit Node биш вэ?</h2>
+<p>Хүмүүс их андуурдаг.</p><p><strong>Exit Node</strong></p><ul>
+<li>Интернет траффик дамжуулна</li>
+<li>Байршил нуух, geo unblock хийхэд ашиглана</li>
+</ul>
+<p><strong>Subnet Router</strong></p><ul>
+<li>Зөвхөн дотоод LAN руу нэвтрүүлнэ</li>
+<li>Гэрийн сүлжээ рүү алсаас холбогдоход ашиглана</li>
+</ul>
+<hr>
+<h2 id="давуу-тал">Давуу тал</h2>
+<ul>
+<li>Дотоод серверээ public болгох шаардлагагүй</li>
+<li>Port forwarding хэрэггүй</li>
+<li>Dynamic IP асуудал алга</li>
+<li>Камер / NAS / Printer бүгд алсаас ажиллана</li>
+<li>Нэг төхөөрөмж л Tailscale суулгахад хангалттай</li>
+</ul>
+<hr>
+<h2 id="ямар-төхөөрөмж-тохиромжтой-вэ">Ямар төхөөрөмж тохиромжтой вэ?</h2>
+<p>Хамгийн common:</p><ul>
+<li>Raspberry Pi</li>
+<li>Home server</li>
+<li>NAS</li>
+<li>Router дээрх Linux</li>
+<li>Docker host</li>
+</ul>
+<p>24/7 асаалттай байхад л хангалттай.</p><hr>
+<h2 id="linux-дээр-subnet-router-хийх-алхам">Linux дээр Subnet Router хийх алхам</h2>
+<h3 id="1-tailscale-суулгана">1. Tailscale суулгана</h3>
+<pre><code class="language-bash">curl -fsSL https://tailscale.com/install.sh | sh
+sudo tailscale up
+</code></pre>
+<p>Login хийнэ.</p><hr>
+<h3 id="2-ip-forwarding-асаана">2. IP forwarding асаана</h3>
+<p>Router шиг ажиллуулахын тулд kernel-д packet дамжуулах эрх өгнө.</p><pre><code class="language-bash">echo &#39;net.ipv4.ip_forward = 1&#39; | sudo tee -a /etc/sysctl.d/99-tailscale.conf
+echo &#39;net.ipv6.conf.all.forwarding = 1&#39; | sudo tee -a /etc/sysctl.d/99-tailscale.conf
+sudo sysctl -p /etc/sysctl.d/99-tailscale.conf
+</code></pre>
+<hr>
+<h3 id="3-дотоод-сүлжээг-advertise-хийх">3. Дотоод сүлжээг advertise хийх</h3>
+<p>Жишээ: таны LAN = <code>192.168.0.0/24</code></p><pre><code class="language-bash">sudo tailscale set --advertise-routes=192.168.0.0/24
+</code></pre>
+<hr>
+<h3 id="4-admin-console-дээр-зөвшөөрнө">4. Admin console дээр зөвшөөрнө</h3>
+<p>Tailscale Admin → Machines → Subnets → Approve</p><hr>
+<h2 id="одоо-юу-болсон-бэ">Одоо юу болсон бэ?</h2>
+<p>Гадаадаас:</p><pre><code>ssh 192.168.0.5
+http://192.168.0.10
+\\192.168.0.3
+</code></pre>
+<p>Шууд ажиллана.</p><p>Public IP, port, firewall, DDNS юу ч хэрэггүй.</p><hr>
+<h2 id="snat-гэж-юу-вэ">SNAT гэж юу вэ?</h2>
+<p>Default-оор LAN төхөөрөмжүүд таны laptop-ыг биш,<br><strong>Subnet router-ыг харна</strong>.</p><p>Тиймээс лог дээр:</p><pre><code>192.168.0.2 → camera
+</code></pre>
+<p>гэж харагдана.</p><p>Хэрэв жинхэнэ IP хадгалах шаардлагатай бол SNAT-ийг унтрааж болно (advanced setup).</p><hr>
+<h2 id="хэзээ-ашиглах-ёстой-вэ">Хэзээ ашиглах ёстой вэ?</h2>
+<ul>
+<li>Гэрийн сервер алсаас ашиглах</li>
+<li>NAS руу аюулгүй хандах</li>
+<li>Камер харах</li>
+<li>Smart home удирдах</li>
+<li>Cloudflare Tunnel-ээс илүү энгийн setup хүсэх үед</li>
+</ul>
+<hr>
+<h2 id="дүгнэлт">Дүгнэлт</h2>
+<p>Subnet Router бол Tailscale-ийн хамгийн underrated feature.</p><p>VPN биш.<br>Port forward биш.<br>Reverse proxy биш.</p><p>Зүгээр л:</p><p>👉 “Гэрийн сүлжээгээ интернэт дээр гаргахгүйгээр алсаас ашиглах” арга.</p>
             ]]>
         </content>
     </entry>
