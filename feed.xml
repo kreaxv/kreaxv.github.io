@@ -3,7 +3,7 @@
     <title>kreaxv</title>
     <link href="https://kreaxv.github.io/feed.xml" rel="self" />
     <link href="https://kreaxv.github.io" />
-    <updated>2026-02-14T18:31:17+08:00</updated>
+    <updated>2026-02-14T18:33:26+08:00</updated>
     <author>
         <name>kreaxv</name>
     </author>
@@ -30,7 +30,7 @@
                     <p><img src="https://kreaxv.github.io/media/posts/1/tailscale-2.jpg" class="type:primaryImage" alt="" /></p>
                 <h1 id="tailscale-subnet-router-гэж-юу-вэ-бодитоор-юунд-хэрэгтэй-вэ">Tailscale Subnet Router гэж юу вэ? (Бодитоор юунд хэрэгтэй вэ)</h1>
 <p>Tailscale-ийг ихэвчлэн “WireGuard-тай хялбар VPN” гэж ойлгодог. Гэхдээ нэг том асуудал байдаг.</p><p>👉 Таны сүлжээнд байгаа бүх төхөөрөмж дээр Tailscale суулгаж болдоггүй.</p><p>Жишээ нь:</p><ul>
-<li>Принтер<figure class="post__image"><img loading="lazy" src="" alt="Uploading file..." data-is-external-image="true"></figure></li>
+<li>Принтер</li>
 <li>Камер</li>
 <li>NAS</li>
 <li>Router</li>
@@ -39,7 +39,7 @@
 </ul>
 <p>Эдгээр нь VPN client суулгах чадваргүй. Гэхдээ та алсаас хандахыг хүсдэг.</p><p>Энд <strong>Subnet Router</strong> гарч ирдэг.</p><hr>
 <h2 id="subnet-router--сүлжээний-хаалга">Subnet Router = Сүлжээний хаалга</h2>
-<p>Subnet Router бол Tailscale-д холбогдсон <strong>нэг төхөөрөмж</strong> бөгөөд таны дотоод LAN-ийг бүхэлд нь Tailscale-д “оруулж” өгдөг.</p><p>Өөрөөр хэлбэл:</p><pre><code>Таны lapt![Image description](https://kreaxv.github.io/media/posts/1/tailscale.jpg =474x266)op (гадаад)
+<p>Subnet Router бол Tailscale-д холбогдсон <strong>нэг төхөөрөмж</strong> бөгөөд таны дотоод LAN-ийг бүхэлд нь Tailscale-д “оруулж” өгдөг.</p><p>Өөрөөр хэлбэл:</p><pre><code>Таны laptop (гадаад)
         ↓
 Tailscale network
         ↓
