@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+    <title>KreaLab</title>
+    <link href="https://kreaxv.github.io/kreaxv.github.io/feed.xml" rel="self" />
+    <link href="https://kreaxv.github.io/kreaxv.github.io" />
+    <updated>2026-02-14T15:47:57+08:00</updated>
+    <author>
+        <name>kreaxv</name>
+    </author>
+    <id>https://kreaxv.github.io/kreaxv.github.io</id>
+
+    <entry>
+        <title>Hello World</title>
+        <author>
+            <name>kreaxv</name>
+        </author>
+        <link href="https://kreaxv.github.io/kreaxv.github.io/hello-world.html"/>
+        <id>https://kreaxv.github.io/kreaxv.github.io/hello-world.html</id>
+
+        <updated>2026-02-14T15:47:57+08:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    Test blog Publii
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Test blog Publii<figure class="post__image"><img loading="lazy"  src="https://kreaxv.github.io/kreaxv.github.io/media/posts/1/Screenshot-from-2026-02-07-12-42-41.png" alt="" width="721" height="669" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://kreaxv.github.io/kreaxv.github.io/media/posts/1/responsive/Screenshot-from-2026-02-07-12-42-41-xs.png 640w ,https://kreaxv.github.io/kreaxv.github.io/media/posts/1/responsive/Screenshot-from-2026-02-07-12-42-41-sm.png 768w ,https://kreaxv.github.io/kreaxv.github.io/media/posts/1/responsive/Screenshot-from-2026-02-07-12-42-41-md.png 1024w ,https://kreaxv.github.io/kreaxv.github.io/media/posts/1/responsive/Screenshot-from-2026-02-07-12-42-41-lg.png 1366w ,https://kreaxv.github.io/kreaxv.github.io/media/posts/1/responsive/Screenshot-from-2026-02-07-12-42-41-xl.png 1600w ,https://kreaxv.github.io/kreaxv.github.io/media/posts/1/responsive/Screenshot-from-2026-02-07-12-42-41-2xl.png 1920w"></figure>
+            ]]>
+        </content>
+    </entry>
+</feed>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://kreaxv.github.io/kreaxv.github.io/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url>
+<loc>https://kreaxv.github.io/kreaxv.github.io/</loc>
+</url>
+<url>
+<loc>https://kreaxv.github.io/kreaxv.github.io/hello-world.html</loc>
+<lastmod>2026-02-14T15:47:57+08:00</lastmod>
+<image:image>
+<image:loc>https://kreaxv.github.io/kreaxv.github.io/media/posts/1/Screenshot-from-2026-02-07-12-42-41.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+</url>
+</urlset>
